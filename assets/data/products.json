@@ -13,7 +13,7 @@
           "name": "Back Rotary Heavy Weight Multifunctional Weeder",
           "image": "./assets/img/products/HW5MDDE-4.jpg",
           "description": "Famed for its reliability and performance, this power tool is nothing less than a tractor. Designed for use in both wet and dry land, its highly powerful 6.5 HP Diesel engine has nothing it can’t cut, widely used in horticulture and plantation, they come packed with features. This versatile machine can optimize your farming activities at a relatively affordable cost and requires low maintenance.",
-          "price": 47000
+          "price": 147000
         },
         {
           "name": "Back Rotary Heavy Weight Multifunction Weeder",
@@ -66,19 +66,19 @@
           "name": "Knapsack Sprayer 16 L",
           "image": "./assets/img/products/spray1.PNG",
           "description": "Manual hand sprayer with 16-liter tank for pesticides and fertilizers.",
-          "price": 1800
+          "price": "xxxx"
         },
         {
           "name": "Battery Sprayer 18 L",
           "image": "./assets/img/products/spray2.PNG",
           "description": "Rechargeable battery sprayer with dual nozzles and 18-liter capacity.",
-          "price": 3200
+          "price": "xxxx"
         },
         {
-          "name": "Battery Sprayer 18 L",
+          "name": "Battery Sprayer 16 L",
           "image": "./assets/img/products/spray3.PNG",
-          "description": "Rechargeable battery sprayer with dual nozzles and 18-liter capacity.",
-          "price": 3200
+          "description": "Rechargeable battery sprayer with dual nozzles and 16-liter capacity.",
+          "price": "xxxx"
         }
       ]
     },
@@ -123,7 +123,7 @@
         {
           "name": "Water Pump SRWP-30",
           "image": "./assets/img/products/srwp30-waterpump.png",
-          "description": "Geared for challenges, Varshaa’s water pumps are always ready to meet the rugged tasks at hand. Designed to move liquids with ease, they are highly reliable, efficient, and long-lasting. Driven by an efficient single-cylinder, air-cooled 4 stroke engine, this water pump delivers splendid performance with outstanding fuel efficiency. Ensuring a hassle-free flow, this water pump lets you rest easy at work. Ideal for agricultural applications and households, they are easy to install, rust-free, and robust hence offering a longer service life.",
+          "description": "Geared for challenges, Varshaa's water pumps are always ready to meet the rugged tasks at hand. Designed to move liquids with ease, they are highly reliable, efficient, and long-lasting. Driven by an efficient single-cylinder, air-cooled 4 stroke engine, this water pump delivers splendid performance with outstanding fuel efficiency. Ensuring a hassle-free flow, this water pump lets you rest easy at work. Ideal for agricultural applications and households, they are easy to install, rust-free, and robust hence offering a longer service life.",
           "price": "xxxxx"
         },
         {
@@ -135,7 +135,7 @@
         {
           "name": "Earth Auger JEA 52X4",
           "image": "./assets/img/products/DSC_8374.jpg",
-          "description": "Built tough to penetrate deep into the ground, Varshaa’s range of Rotating helical flighting earth augers are well celebrated for their reliability, commercial-grade engines, and easy start. Their Design of convenient hand controls at your fingertips, promises both precision and power. Suitable for drilling in both agricultural lands and your backyard garden for a variety of vegetable crops and banana plantations, these earth augers come in handy to make such jobs a walk in the park.",
+          "description": "Built tough to penetrate deep into the ground, Varshaa's range of Rotating helical flighting earth augers are well celebrated for their reliability, commercial-grade engines, and easy start. Their Design of convenient hand controls at your fingertips, promises both precision and power. Suitable for drilling in both agricultural lands and your backyard garden for a variety of vegetable crops and banana plantations, these earth augers come in handy to make such jobs a walk in the park.",
           "price": "xxxxxx"
         },
         {
