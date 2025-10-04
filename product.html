@@ -1,0 +1,542 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+    <title>Products-Kisan Agro</title>
+
+  <meta name="description" content="">
+  <meta name="keywords" content="">
+
+  <!-- Favicons -->
+  <link href="assets/img/favicon.png" rel="icon">
+  <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon">
+
+  <!-- Fonts -->
+  <link href="https://fonts.googleapis.com" rel="preconnect">
+  <link href="https://fonts.gstatic.com" rel="preconnect" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&family=Marcellus:wght@400&display=swap"
+    rel="stylesheet">
+
+  <!-- Vendor CSS Files -->
+  <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+  <link href="assets/vendor/aos/aos.css" rel="stylesheet">
+  <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
+  <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
+
+  <!-- Main CSS File -->
+  <link href="assets/css/main.css" rel="stylesheet">
+
+  <style>
+    /* Custom styles for products page */
+    .category-filter {
+      background-color: #f8f9fa;
+      padding: 1.5rem 0;
+      border-bottom: 1px solid #e9ecef;
+      position: sticky;
+      top: 0;
+      z-index: 1020;
+      transition: all 0.3s ease;
+    }
+
+    .category-filter.sticky {
+      box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    }
+
+    .category-buttons {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 0.5rem;
+    }
+
+    .category-btn {
+      border: 1px solid #28a745;
+      background-color: white;
+      color: #28a745;
+      padding: 0.5rem 1.25rem;
+      border-radius: 50px;
+      transition: all 0.3s ease;
+      font-weight: 500;
+    }
+
+    .category-btn:hover,
+    .category-btn.active {
+      background-color: #28a745;
+      color: white;
+    }
+
+    .product-card {
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+      border: none;
+      overflow: hidden;
+    }
+
+    .product-card:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+    }
+
+    .card-img-top {
+      height: 200px;
+      object-fit: cover;
+      transition: transform 0.5s ease;
+    }
+
+    .product-card:hover .card-img-top {
+      transform: scale(1.05);
+    }
+
+    .card-title {
+      color: #2c5530;
+      font-weight: 600;
+    }
+
+    .price-tag {
+      font-size: 1.1rem;
+      font-weight: 600;
+      color: #28a745;
+    }
+
+    .view-btn {
+      background-color: #28a745;
+      border-color: #28a745;
+      transition: all 0.3s ease;
+    }
+
+    .view-btn:hover {
+      background-color: #218838;
+      border-color: #1e7e34;
+      transform: scale(1.05);
+    }
+
+    .section-title {
+      color: #2c5530;
+      position: relative;
+      padding-bottom: 10px;
+      margin-bottom: 30px;
+    }
+
+    .section-title:after {
+      content: '';
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      width: 60px;
+      height: 3px;
+      background-color: #28a745;
+    }
+
+    .no-products {
+      text-align: center;
+      padding: 3rem 0;
+      color: #6c757d;
+    }
+
+    /* Responsive adjustments */
+    @media (max-width: 768px) {
+      .category-buttons {
+        gap: 0.25rem;
+      }
+
+      .category-btn {
+        padding: 0.4rem 0.8rem;
+        font-size: 0.9rem;
+      }
+
+      .card-img-top {
+        height: 180px;
+      }
+    }
+
+    @media (max-width: 576px) {
+      .category-buttons {
+        justify-content: flex-start;
+        overflow-x: auto;
+        padding-bottom: 10px;
+      }
+
+      .category-btn {
+        white-space: nowrap;
+      }
+    }
+  </style>
+</head>
+
+<body class="services-page">
+
+  <header id="header" class="header d-flex align-items-center position-relative">
+    <div class="container-fluid container-xl position-relative d-flex align-items-center justify-content-between">
+
+      <a href="index.html" class="logo d-flex align-items-center">
+        <!-- Uncomment the line below if you also wish to use an image logo -->
+        <img src="assets/img/logo.png" alt="AgriCulture">
+        <!-- <h1 class="sitename">AgriCulture</h1>  -->
+      </a>
+
+      <nav id="navmenu" class="navmenu">
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="product.html" class="active">Products</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+        <i class="mobile-nav-toggle d-xl-none bi bi-list"></i>
+      </nav>
+
+    </div>
+  </header>
+
+  <main class="main">
+
+    <!-- Page Title -->
+    <div class="page-title dark-background" data-aos="fade"
+      style="background-image: url(assets/img/page-title-bg.webp);">
+      <div class="container position-relative">
+        <h1>Our Products</h1>
+        <p>Discover our wide range of agricultural products</p>
+        <nav class="breadcrumbs">
+          <ol>
+            <li><a href="index.html">Home</a></li>
+            <li class="current">Products</li>
+          </ol>
+        </nav>
+      </div>
+    </div><!-- End Page Title -->
+
+    <!-- Category Filter Section -->
+    <section class="category-filter" id="categoryFilter">
+      <div class="container">
+        <div class="category-buttons" id="categoryButtons">
+          <!-- Category buttons will be dynamically added here -->
+        </div>
+      </div>
+    </section>
+
+    <!-- Products Section -->
+    <section id="products" class="products section py-5">
+      <div class="container">
+        <div class="section-title" data-aos="fade-up">
+          <h2>Our Agricultural Products</h2>
+          <p>High-quality products for modern farming</p>
+        </div>
+
+        <div id="productContainer" data-aos="fade-up"></div>
+
+        <div id="noProductsMessage" class="no-products d-none">
+          <i class="bi bi-search display-1 text-muted mb-3"></i>
+          <h3>No Products Found</h3>
+          <p>Try selecting a different category or search term.</p>
+        </div>
+      </div>
+
+      <!-- Product Modal -->
+      <div class="modal fade" id="productModal" tabindex="-1" aria-labelledby="productModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-lg modal-dialog-centered">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title" id="productModalLabel"></h5>
+              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+              <div class="row">
+                <div class="col-md-6">
+                  <img id="productImage" src="" class="img-fluid rounded" alt="">
+                </div>
+                <div class="col-md-6">
+                  <p id="productDescription" class="mb-3"></p>
+                  <div class="d-flex align-items-center mb-3">
+                    <h5 class="text-success mb-0">Price: ₹<span id="productPrice"></span></h5>
+                  </div>
+                  <!-- <div class="d-grid gap-2">
+                    <button class="btn btn-success">Add to Cart</button>
+                    <button class="btn btn-outline-secondary">Add to Wishlist</button>
+                  </div> -->
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+    <footer id="footer" class="footer dark-background py-4">
+      <div class="footer-top py-5">
+        <div class="container">
+          <div class="row gy-4">
+            <!-- About Section -->
+            <div class="col-lg-4 col-md-6 footer-about">
+              <a href="index.html" class="logo d-flex align-items-center mb-3">
+                <span class="sitename fw-bold text-white fs-4"
+                  >Kisan Agrotech</span
+                >
+              </a>
+              <div class="footer-contact">
+                <p>
+                  NH 4 Pune - Banglore Highway, Bombay Restaurant to Wade
+                  Phata,<br />
+                  Service Road, Pirwadi, Satara - 415002
+                </p>
+                <p class="mt-3">
+                  <strong>Phone:</strong> <span>+91 8208181384</span>
+                </p>
+                <p><strong>Email:</strong> <span>info@example.com</span></p>
+              </div>
+            </div>
+
+            <!-- Useful Links -->
+            <div class="col-lg-2 col-md-3 footer-links">
+              <h4 class="fw-semibold mb-3">Useful Links</h4>
+              <ul class="list-unstyled">
+                <li><a href="/index.html">Home</a></li>
+                <li><a href="/product.html">Product</a></li>
+                <li><a href="/contact.html">Contact</a></li>
+              </ul>
+            </div>
+
+            <!-- Services -->
+            <div class="col-lg-2 col-md-3 footer-links">
+              <h4 class="fw-semibold mb-3">Our Product</h4>
+              <ul class="list-unstyled">
+                <li><a href="#">Power Weeder</a></li>
+                <li><a href="#">Sprayer</a></li>
+                <li><a href="#">Brush Cutter</a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Bottom Section -->
+      <div class="copyright bg-dark text-center text-white py-3">
+        <div
+          class="container d-flex flex-column flex-lg-row justify-content-between align-items-center"
+        >
+          <div class="mb-3 mb-lg-0 text-center text-lg-start">
+            © Copyright <strong>Kisan Agrotech</strong>. All Rights Reserved
+            <br />
+            <small
+              >Designed by
+              <a
+                href="https://bootstrapmade.com/"
+                class="text-decoration-none text-success"
+                >Jijau Software</a
+              ></small
+            >
+          </div>
+
+          <!-- Social Links -->
+          <div class="social-links">
+            <a
+              href="https://www.youtube.com/@kisaanagrotechsatara"
+              target="_blank"
+              class="text-white me-3 fs-4"
+            >
+              <i class="bi bi-youtube"></i>
+            </a>
+            <a
+              href="https://www.facebook.com/profile.php?id=100075431157769"
+              target="_blank"
+              class="text-white me-3 fs-4"
+            >
+              <i class="bi bi-facebook"></i>
+            </a>
+            <a
+              href="https://www.instagram.com/agrotechkissan/"
+              target="_blank"
+              class="text-white fs-4"
+            >
+              <i class="bi bi-instagram"></i>
+            </a>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+  <!-- Scroll Top -->
+  <a href="#" id="scroll-top" class="scroll-top d-flex align-items-center justify-content-center"><i
+      class="bi bi-arrow-up-short"></i></a>
+
+  <!-- Preloader -->
+  <div id="preloader"></div>
+
+  <!-- Vendor JS Files -->
+  <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="assets/vendor/php-email-form/validate.js"></script>
+  <script src="assets/vendor/aos/aos.js"></script>
+  <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
+  <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
+
+  <!-- Main JS File -->
+  <script src="./assets/js/main.js"></script>
+  <script>
+    // Sample product data (replace with your actual data from products.json)
+
+    let currentCategory = 'all';
+
+    async function loadProducts() {
+      try {
+        const response = await fetch('assets/data/products.json');
+        const data = await response.json();
+
+
+        // Add IDs to categories for filtering
+        data.categories.forEach((category, index) => {
+          category.id = category.name.toLowerCase().replace(/\s+/g, '-');
+        });
+
+        const container = document.getElementById('productContainer');
+        const categoryButtons = document.getElementById('categoryButtons');
+        const noProductsMessage = document.getElementById('noProductsMessage');
+
+        // Create category buttons
+        categoryButtons.innerHTML = `
+            <button class="category-btn active" data-category="all">All Products</button>
+            ${data.categories.map(cat =>
+          `<button class="category-btn" data-category="${cat.id}">${cat.name}</button>`
+        ).join('')}
+        `;
+
+        // Add event listeners to category buttons
+        document.querySelectorAll('.category-btn').forEach(btn => {
+          btn.addEventListener('click', function () {
+            // Update active button
+            document.querySelectorAll('.category-btn').forEach(b => b.classList.remove('active'));
+            this.classList.add('active');
+
+            // Filter products
+            const currentCategory = this.getAttribute('data-category');
+            renderProducts(data, currentCategory);
+          });
+        });
+
+        // Initial render
+        renderProducts(data, 'all');
+
+        // Handle modal content
+        const productModal = document.getElementById('productModal');
+        productModal.addEventListener('show.bs.modal', event => {
+          const button = event.relatedTarget;
+          document.getElementById('productModalLabel').textContent = button.getAttribute('data-name');
+          document.getElementById('productImage').src = button.getAttribute('data-image');
+          document.getElementById('productDescription').textContent = button.getAttribute('data-description');
+          document.getElementById('productPrice').textContent = button.getAttribute('data-price');
+        });
+
+        // Make category filter sticky on scroll
+        window.addEventListener('scroll', function () {
+          const categoryFilter = document.getElementById('categoryFilter');
+          if (window.scrollY > 100) {
+            categoryFilter.classList.add('sticky');
+          } else {
+            categoryFilter.classList.remove('sticky');
+          }
+        });
+
+      } catch (error) {
+        console.error('Error loading products:', error);
+        document.getElementById('productContainer').innerHTML = `
+            <div class="alert alert-danger text-center">
+                <h4>Error Loading Products</h4>
+                <p>Please try refreshing the page or contact support if the problem persists.</p>
+            </div>
+        `;
+      }
+    }
+
+    function renderProducts(data, category) {
+      const container = document.getElementById('productContainer');
+      const noProductsMessage = document.getElementById('noProductsMessage');
+
+      container.innerHTML = '';
+
+      let hasProducts = false;
+
+      if (category === 'all') {
+        // Render all categories
+        data.categories.forEach(cat => {
+          if (cat.products.length > 0) {
+            hasProducts = true;
+            const section = document.createElement('div');
+            section.classList.add('mb-5');
+            section.innerHTML = `
+                    <h4 class="mb-4 section-title">${cat.name}</h4>
+                    <div class="row g-4">
+                        ${cat.products.map(p => `
+                            <div class="col-md-6 col-lg-3">
+                                <div class="card h-100 product-card">
+                                    <img src="${p.image}" class="card-img-top" alt="${p.name}" onerror="this.src='assets/img/placeholder.jpg'">
+                                    <div class="card-body d-flex flex-column">
+                                        <h5 class="card-title">${p.name}</h5>
+                                        <p class="card-text small flex-grow-1">${p.description.substring(0, 80)}...</p>
+                                        <div class="d-flex justify-content-between align-items-center mt-auto">
+                                            <span class="price-tag">₹${p.price.toLocaleString()}</span>
+                                            <button class="btn btn-success btn-sm view-btn" data-bs-toggle="modal"
+                                                data-bs-target="#productModal"
+                                                data-name="${p.name}"
+                                                data-image="${p.image}"
+                                                data-description="${p.description}"
+                                                data-price="${p.price.toLocaleString()}">View Details</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>`).join('')}
+                    </div>`;
+            container.appendChild(section);
+          }
+        });
+      } else {
+        // Render only selected category
+        const selectedCategory = data.categories.find(cat => cat.id === category);
+        if (selectedCategory && selectedCategory.products.length > 0) {
+          hasProducts = true;
+          const section = document.createElement('div');
+          section.classList.add('mb-5');
+          section.innerHTML = `
+                <h4 class="mb-4 section-title">${selectedCategory.name}</h4>
+                <div class="row g-4">
+                    ${selectedCategory.products.map(p => `
+                        <div class="col-md-6 col-lg-3">
+                            <div class="card h-100 product-card">
+                                <img src="${p.image}" class="card-img-top" alt="${p.name}" onerror="this.src='assets/img/placeholder.jpg'">
+                                <div class="card-body d-flex flex-column">
+                                    <h5 class="card-title">${p.name}</h5>
+                                    <p class="card-text small flex-grow-1">${p.description.substring(0, 80)}...</p>
+                                    <div class="d-flex justify-content-between align-items-center mt-auto">
+                                        <span class="price-tag">₹${p.price.toLocaleString()}</span>
+                                        <button class="btn btn-success btn-sm view-btn" data-bs-toggle="modal"
+                                            data-bs-target="#productModal"
+                                            data-name="${p.name}"
+                                            data-image="${p.image}"
+                                            data-description="${p.description}"
+                                            data-price="${p.price.toLocaleString()}">View Details</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>`).join('')}
+                </div>`;
+          container.appendChild(section);
+        }
+      }
+
+      // Show/hide no products message
+      if (hasProducts) {
+        noProductsMessage.classList.add('d-none');
+      } else {
+        noProductsMessage.classList.remove('d-none');
+      }
+    }
+
+    // Call function after page load
+    document.addEventListener('DOMContentLoaded', loadProducts);
+  </script>
+
+
+
+</body>
+
+</html>

@@ -1,0 +1,150 @@
+{
+  "categories": [
+    {
+      "name": "Power Weeders",
+      "products": [
+        {
+          "name": "Petrol Weeder Gear",
+          "image": "./assets/img/products/SW5GDPE.png",
+          "description": "A 5 HP Air-cooled Eco series Petrol Engine for extreme power that can be driven up to the speed of 3600 RPM would always be a powerful and smarter choice. Well suited for both wet and dry land Varshaa’s SW 5GD PE power weeder would be an ideal choice for your farm. Their lightweight design and optimal ergonomics make it a versatile tool and a smart buy.",
+          "price": 99000
+        },
+        {
+          "name": "Back Rotary Heavy Weight Multifunctional Weeder",
+          "image": "./assets/img/products/HW5MDDE-4.jpg",
+          "description": "Famed for its reliability and performance, this power tool is nothing less than a tractor. Designed for use in both wet and dry land, its highly powerful 6.5 HP Diesel engine has nothing it can’t cut, widely used in horticulture and plantation, they come packed with features. This versatile machine can optimize your farming activities at a relatively affordable cost and requires low maintenance.",
+          "price": 47000
+        },
+        {
+          "name": "Back Rotary Heavy Weight Multifunction Weeder",
+          "image": "./assets/img/products/SW9DEL.png",
+          "description": "This power weeder is a one-stop shop for all of your agricultural needs, with several exclusive features. Varshaa is proud to claim that we are the only makers and distributors of this type of power weeder in the entire country. This machine, hailed as an all-in-one machine for all your needs, is excellent for a variety of activities ranging from Trenching and soil earthing to step and inter-cultivation. With an ultra-modern design that is constructed robust and has many astonishing features, this multi-functional power weeder works effortlessly with exceptional stability and outstanding performance. The machine is driven by a high-quality self-start diesel engine that produces great power and exceptional performance.",
+          "price": 175000
+        },
+        {
+          "name": "Back Rotary Heavy Weight Multifunctional Weeder",
+          "image": "./assets/img/products/SW9DEL (1).png",
+          "description": "A one-stop solution for all your agricultural needs -this power weeder comes packed with many exclusive features. Varshaa takes great pride in saying that we are the only manufacturers and distributors of this range of power weeders in the entire nation. Celebrated as an all-in-one machine for all your demands, this machine is ideal for performing a wide range of tasks ranging from Trenching and soil earthing to step and inter-cultivation.This multi-functional power weeder works effortlessly with superior stability and outstanding performance with an ultra-modern design that is built tough with many impressive features. The machine is powered by a self-start diesel engine with high build quality that generates high power and superior performance.",
+          "price": 155000
+        },
+        {
+          "name": "Back Rotary Light Weight Multifunctional Weeder",
+          "image": "./assets/img/products/HECTOR.png",
+          "description": "This meticulously designed, tough-built, high-performance weeder with an excellent design is all you need for your farm! Powered by a 5 HP Eco series petrol engine this weeder is an ideal choice for the inter-cultivation of a variety of crops. Their heavy-duty non-detachable gearbox guarantees power and ensures optimal fuel consumption. The hector power weeder would be a perfect choice to make all the complex processes a piece of cake.",
+          "price": 125000
+        },
+        {
+          "name": "Petrol Weeder Light Weight Gear",
+          "image": "./assets/img/products/CHAMPION.png",
+          "description": "Lauded for their lightweight design, we pride ourselves on being the only manufacturers of this machine in the entire country. This commercial-grade high-performance power weeder is celebrated for its power and efficient operation. Designed to ensure comfort and safety, this easy-to-use, lightweight machine is primarily used in the Inter-cultivation process of a variety of crops. The powerful 5 HP Eco series petrol engine guarantees smooth and loamy soil at a single pass. Its powerful and easy-to-use features make the machine a champion not only by name but by its performance and reliability.",
+          "price": 68000
+        },
+        {
+          "name": "Diesel Weeder Gear",
+          "image": "./assets/img/products/HW524DE.png",
+          "description": "Celebrated for its multipurpose use and maximum speed, Varshaa brings to you its supreme quality power weeder. Driven by a sophisticated single cylinder 4 stroke diesel engine that generates power up to 5 HP, does an excellent job in pulverizing and weeding soil in a short period of time. Its engine speed of 3600 RPM is one of the features that make this machine the most wanted among many large farm owners and middle-level farmers. Now work more efficiently in a shorter period of time with less hassle.",
+          "price": 72000
+        },
+        {
+          "name": "Petrol Weeder Medium Weight Belt",
+          "image": "./assets/img/products/SW524PE.png",
+          "description": "Bringing to you Varshaa's highly sophisticated machine widely used in step cultivation and horticulture. This multi-purpose machine is equipped with many exclusive features and its supreme power comes from a 5 HP Eco series  petrol engine. This tool not only helps in stirring and pulverizing soil but also loosens it for plantation. Their low-cost maintenance and low fuel consumption make it the best among all power weeders.",
+          "price": 65000
+        },
+        {
+          "name": "Diesel Weeder Heavy Gear",
+          "image": "./assets/img/products/Power-Weeder-SW940DE.png",
+          "description": "Equipped with a self-start Diesel engine and innumerable exclusive features, this machine is a world-class working tool for the inter-cultivation of a wide range of crops. Widely used for horticulture and plantation processes, this multi-purpose machine is ideal for heavy weed cutting. Meticulously designed and manufactured using high-end technology, it’s not enough to say that this machine is worth every single penny.",
+          "price": 115000
+        }
+      ]
+    },
+    {
+      "name": "Sprayers",
+      "products": [
+        {
+          "name": "Knapsack Sprayer 16 L",
+          "image": "./assets/img/products/spray1.PNG",
+          "description": "Manual hand sprayer with 16-liter tank for pesticides and fertilizers.",
+          "price": 1800
+        },
+        {
+          "name": "Battery Sprayer 18 L",
+          "image": "./assets/img/products/spray2.PNG",
+          "description": "Rechargeable battery sprayer with dual nozzles and 18-liter capacity.",
+          "price": 3200
+        },
+        {
+          "name": "Battery Sprayer 18 L",
+          "image": "./assets/img/products/spray3.PNG",
+          "description": "Rechargeable battery sprayer with dual nozzles and 18-liter capacity.",
+          "price": 3200
+        }
+      ]
+    },
+    {
+      "name": "Brush Cutters",
+      "products": [
+        {
+          "name": "Brush Cutter BC 520",
+          "image": "./assets/img/products/DSC_8413.jpg",
+          "description": "Tough weeds and resistant grasses are no match for Varshaa’s Brush cutter, which is designed with great ergonomics. This brush cutter is ergonomically built for effective use, perfect balance, and outstanding comfort to fulfil all of your needs and expectations, whether you are a professional or a household. In contrast to the traditional design, our brush cutter has increased strength and greater power delivery to the operating zone. From light pruning to cutting stiff-necked bushes, this tool can go where brush cutters cannot.",
+          "price": 37000
+        },
+        {
+          "name": "Brush Cutter BC 430",
+          "image": "./assets/img/products/cutter-12-Copy-2.jpg",
+          "description": "Our brush cutter is ergonomically built for comfort and efficiency, ensuring that all of your work is balanced and comfortable. They are renowned for executing a wide range of duties, from cutting obstinate undesired plants and trimming hedgerows to maintaining your backyard and gardens.",
+          "price": 29500
+        },
+        {
+          "name": "Brush Cutter Venus 35G",
+          "image": "./assets/img/products/DSC_8414.jpg",
+          "description": "This brush cutter is known for its remarkable accessibility and unique features, and it is known for making even the most difficult work easier for you. This brush cutter is ideal for all professionals and homeowners because it is lightweight and provides a superb cutting experience while sparing the user’s arms and hands. Using Varshaa’s brush cutter, you can now do all complex activities with less effort and in less time.",
+          "price": 33000
+        },
+        {
+          "name": "Brush Cutter Venus 45G",
+          "image": "./assets/img/products/Varsha.png",
+          "description": "This brush cutter is known for its remarkable flexibility and unique features, and it is known for making even the most difficult work easier for you. This brush cutter is ideal for all professionals and homeowners because it is lightweight and provides a superb cutting experience while sparing the user’s arms and hands. Using Varshaa’s brush cutter, you can now do all complex tasks with less effort and in less time.",
+          "price": 35300
+        },
+        {
+          "name": "Backpack Weeder BCW 52X2",
+          "image": "./assets/img/products/DSC_8410.jpg",
+          "description": "The Backpack brush cutter is an attempt at brush cutter innovation. In order to make it a multi-purpose machine, the Varshaa’s backpack brush cutter comes with a comprehensive set of accessories, including a cultivator, weeder, grass cutter and nylon trimmer (Tap & Go) – all at a low price. This machine is an ergonomic option because to its multifunctional blade, which includes two sets of weeding tools, and its fuel consumption of approximately 900 mml/h.",
+          "price": "xxxxxx"
+        }
+      ]
+    },
+    {
+      "name": "Other",
+      "products": [
+        {
+          "name": "Water Pump SRWP-30",
+          "image": "./assets/img/products/srwp30-waterpump.png",
+          "description": "Geared for challenges, Varshaa’s water pumps are always ready to meet the rugged tasks at hand. Designed to move liquids with ease, they are highly reliable, efficient, and long-lasting. Driven by an efficient single-cylinder, air-cooled 4 stroke engine, this water pump delivers splendid performance with outstanding fuel efficiency. Ensuring a hassle-free flow, this water pump lets you rest easy at work. Ideal for agricultural applications and households, they are easy to install, rust-free, and robust hence offering a longer service life.",
+          "price": "xxxxx"
+        },
+        {
+          "name": "Water Pump SRWP-20",
+          "image": "./assets/img/products/srwp20-waterpump.png",
+          "description": "Built using supreme high quality raw materials and spares, they are admired for their efficiency and sustained performance. Ensuring a consistent energy efficient operation, this water pump is the best suitable choice for all your agricultural needs. Designed to deal with specific challenges at your farm, ranging from pumping slurry dirty water to supplying effluent fresh water for irrigation, this water pump is all you need to set your work at ease. Now Drive water anywhere with Varshaa Water pump.",
+          "price": "xxxxx"
+        },
+        {
+          "name": "Earth Auger JEA 52X4",
+          "image": "./assets/img/products/DSC_8374.jpg",
+          "description": "Built tough to penetrate deep into the ground, Varshaa’s range of Rotating helical flighting earth augers are well celebrated for their reliability, commercial-grade engines, and easy start. Their Design of convenient hand controls at your fingertips, promises both precision and power. Suitable for drilling in both agricultural lands and your backyard garden for a variety of vegetable crops and banana plantations, these earth augers come in handy to make such jobs a walk in the park.",
+          "price": "xxxxxx"
+        },
+        {
+          "name": "Water Pump SRWP-20",
+          "image": "./assets/img/products/srwp20-waterpump.png",
+          "description": "Built using supreme high quality raw materials and spares, they are admired for their efficiency and sustained performance. Ensuring a consistent energy efficient operation, this water pump is the best suitable choice for all your agricultural needs. Designed to deal with specific challenges at your farm, ranging from pumping slurry dirty water to supplying effluent fresh water for irrigation, this water pump is all you need to set your work at ease. Now Drive water anywhere with Varshaa Water pump.",
+          "price": "xxxxx"
+        }
+      ]
+    }
+  ]
+}
